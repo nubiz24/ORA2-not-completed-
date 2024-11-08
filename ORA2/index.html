@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>ORA2</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./lib/w3.css">
+  <link rel="stylesheet" href="./lib/w3-theme-black.css">
+  <link rel="stylesheet" href="./lib/css">
+  <link rel="stylesheet" href="./lib/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a id="home" onclick="showContent('courseInfo')" class="w3-bar-item w3-button">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="javascript:void(0)" onclick="showContent('info')" class="w3-bar-item w3-button" id="topinfo">Thông tin môn học</a>
+      <a href="javascript:void(0)" onclick="showContent('web-tech')" class="w3-bar-item w3-button" id="topwebtech">Các công nghệ web</a>
+      <a href="javascript:void(0)" onclick="showContent('student-info')" class="w3-bar-item w3-button" id="topstudent">Thông tin sinh viên</a>
+      <a href="javascript:void(0)" onclick="showContent('admin-page')" class="w3-bar-item w3-button">Admin Page</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black"
+      href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">Link</a>
+    <a class="w3-bar-item w3-button w3-hover-black"
+      href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">Link</a>
+    <a class="w3-bar-item w3-button w3-hover-black"
+      href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">Link</a>
+    <a class="w3-bar-item w3-button w3-hover-black"
+      href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">Link</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Main content -->
+  <div id="content-container" class="w3-main" style="margin-left:250px">
+    <!-- Section 1: Logo -->
+    <div id="courseInfo" class="w3-container w3-padding-64 hidden">
+      <div class="container">
+        <div id="classInfo">
+          <div class="section-header">Thông tin khai giảng</div>
+          <table class="table-info">
+            <tr>
+              <th>Thứ</th>
+              <td>Thứ 6 </td>
+            </tr>
+            <tr>
+              <th>Thời gian/Tiết</th>
+              <td>Từ 3 đến 6</td>
+            </tr>
+            <tr>
+              <th>Ngày/Tuần</th>
+              <td>2-9,11-18</td>
+            </tr>
+            <tr>
+              <th>Tại địa điểm</th>
+              <td>D9-501</td>
+            </tr>
+          </table>
+        </div>
+        <div id="seminar">
+          <div class="section-header" style="margin-top: 20px;">Thông tin seminar</div>
+          <table class="table-info">
+            <tr>
+              <th>Mã lớp</th>
+              <td>151900</td>
+            </tr>
+            <tr>
+              <th>Loại hình</th>
+              <td>LT+BT</td>
+            </tr>
+            <tr>
+              <th>Hệ</th>
+              <td>HEDSPI</td>
+            </tr>
+            <tr>
+              <th>GVHD</th>
+              <td>Phạm Huy Hoàng</td>
+            </tr>
+            <tr>
+              <th>Số lần vắng</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>Số sinh viên</th>
+              <td>150</td>
+            </tr>
+            <tr>
+              <th>Hình thức GD</th>
+              <td>Offline</td>
+            </tr>
+          </table>
+        </div>
+        <div id="company">
+          <div class="section-header" style="margin-top: 20px;">Thông tin công ty quan tâm</div>
+          <div style="display: flex; justify-content: space-between;">
+            <!-- Nội dung bên trái -->
+            <div style="flex: 2; margin-right: 30px;">
+              <ul>
+                <li><strong>Công ty:</strong> FPT Software</li>
+              </ul>
+              <p>
+                FPT Software là tên gọi khác của công ty TNHH Phần Mềm FPT với nhiệm vụ chính là gia công phần mềm tại
+                Việt Nam và nước ngoài. Thành lập từ năm 1988 đến nay với 3 Trụ sở chính FPT Software đặt tại Việt Nam
+                và
+                một số nước trên toàn thế giới như Hoa Kỳ, Nhật Bản, Malaysia, Đức, Úc, Singapore, Malaysia, Thái Lan và
+                Philipines hiện FPT Software đáp ứng nhu cầu gia công phần mềm lớn cho hơn 150 công ty hàng đầu tại 20
+                quốc gia lớn nhất trên thế giới hiện nay với các hợp đồng lớn có khi đạt cả 1 triệu USD dành cho một số
+                đối tác lớn như Hitachi, NEOPOST, Petronas, Deutsche Bank, và Unilever với hơn 4000 nhân viên trên toàn
+                thế giới. </p>
+
+
+
+              <p>FPT Software theo đuổi mục tiêu gia công phần mềm để đáp ứng cho nhu cầu phát triển CNTT của các hãng
+                phần
+                mềm trong nước, các công ty lớn trong nước và tham vọng hơn là xuất khẩu phần mềm trên toàn thế giới cho
+                các công ty nước ngoài biết đến tập đoàn FPT, mục đích chính là vươn đến tầm cao mới thông qua công nghệ
+                nhằm nâng cao năng suất lao động.</p>
+
+
+
+              <p>Kinh doanh của FPT Software xuất phát từ Công nghệ thông tin và Viễn Thông FPT là cốt lõi để đáp ứng
+                cho
+                khách hàng trên 63 tỉnh thành trên toàn lãnh thổ Việt Nam và mở rộng đến khách hàng toàn cầu. Từ khi
+                được
+                thành lập cho đến nay, FPT Software đã là công ty phần mềm số 1 tại Việt Nam trong lĩnh vực tích hợp hệ
+                thống, phân phối và bán lẻ, dịch vụ Công Nghệ Thông tin, xuất khẩu gia công phần mềm, bán lẻ sản phẩm
+                CNTT. Ở lĩnh vực Viễn Thông FPT là một trong 3 nhà cung cấp dịch vụ internet cáp quang FPT hàng đầu tại
+                Việt Nam. Về lĩnh vực quảng cáo, FPT là đơn vị quảng cáo trực tuyến số 1 tại Việt Nam với trang báo điện
+                tử VNexpress với hơn 42 triệu lượt truy cập mỗi ngày.</p>
+
+            </div>
+
+            <!-- Quảng cáo bên phải -->
+            <a href="https://fptsoftware.com/" target="_blank" style="flex: 1; margin-top: 20px;">
+              <div class="FRB" style="width: 100%;">
+                <img class="DRB"
+                  src="http://itde.hvnh.edu.vn/public/img/news/files/FPT%20tuy%E1%BB%83n%20d%E1%BB%A5ng%20(2).jpg"
+                  style="width: 100%;">
+                <div class="ERB" style="width: 100%;color: blue" title="">FPT SOFTWARE TUYỂN DỤNG</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2: Thông tin môn học -->
+    <div id="info" class="w3-container w3-padding-64 hidden">
+      <div class="container">
+        <div class="header">Thông tin môn học</div>
+        <div style="width: 100%;">
+          <table cellspacing="0" cellpadding="0" style="width: 100%;">
+            <tbody>
+              <tr>
+                <td style="vertical-align: top;">
+                  <div class="GBC">
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                      <!-- Cột 1 -->
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Đơn vị (*)</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>Trường Công nghệ Thông tin và Truyền thông</option>
+                        </select>
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Đơn vị con</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>Nothing selected</option>
+                        </select>
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Mã học phần (*)</label>
+                        <input type="text" value="IT4409" dir="ltr" readonly="" disabled style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Tên học phần</label>
+                        <input type="text" value="Công nghệ web và dịch vụ trực tuyến" dir="ltr" readonly="" disabled
+                          style="width: 100%; white-space: nowrap; overflow: hidden;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Tên tiếng Anh</label>
+                        <input type="text" value="Web technologies and e-Services"
+                          class="form-control IBC form-control-readonly" dir="ltr" readonly="" disabled
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Hệ đào tạo</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>4 items selected</option>
+                        </select>
+                        <div style="width: 100%;">
+                          <a>Thạc sỹ Khoa học&nbsp;[X]&nbsp;&nbsp;&nbsp;</a>
+                          <a>Kỹ sư chính quy&nbsp;[X]&nbsp;&nbsp;&nbsp;</a>
+                          <a>Cử nhân&nbsp;[X]&nbsp;&nbsp;&nbsp;</a>
+                          <a>Việt-Nhật&nbsp;[X]&nbsp;&nbsp;&nbsp;</a>
+                        </div>
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Ngành đào tạo</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>Trường Công nghệ Thông tin và Truyền thông</option>
+                        </select>
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Loại hình (*)</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>Lớp</option>
+                        </select>
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Điều phối viên</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>Phạm Huy Hoàng</option>
+                        </select>
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Nhóm chuyên môn</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>Phạm Huy Hoàng</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Cột 2 -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>HP liên quan</label>
+                        <input type="text" placeholder="Nhập mã HP" disabled style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Hệ số điểm thực hành</label>
+                        <input type="text" value="0" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Số tín chỉ</label>
+                        <input type="text" value="3" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Số giờ LT</label>
+                        <input type="text" value="2" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Số giờ BT</label>
+                        <input type="text" value="2" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Số giờ TN/TH</label>
+                        <input type="text" value="0" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Số giờ tự học</label>
+                        <input type="text" value="6" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Số giờ thực tập</label>
+                        <input type="text" value="0" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>kHD thực tập</label>
+                        <input type="text" value="0" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>kHD đồ án</label>
+                        <input type="text" value="0" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Phân bố</label>
+                        <input type="text" value="3(2-2-0-6)" class="form-control IBC" dir="ltr" disabled=""
+                          style="width: 100%;">
+                      </div>
+
+                      <div style="flex: 1; min-width: 300px;">
+                        <label>Hình thức thi cuối kỳ</label>
+                        <select id="dropdown" disabled style="width: 100%;">
+                          <option>[Chọn hình thức thi cuối kỳ]</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div id="summaryVN">
+                      <div style="width: 100%;">&nbsp;
+                        <hr>
+                      </div>
+                      <div> <label><strong>Mô tả tóm tắt học phần (tiếng Việt)</strong>
+                          (*)</label>
+                      </div>
+                      <p><strong>Mục tiêu: </strong>Học phần cung cấp các kiến thức cần thiết để xây dựng và phát
+                        triển
+                        các ứng dụng, dịch vụ trực
+                        tuyến trên môi trường web. Sau khi học xong học phần này, sinh viên có khả năng:
+                      <ul>
+                        <li>Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho các
+                          lĩnh
+                          vực khác nhau như: hệ quản trị nội dung (CMS), cổng thông tin (Portal), hay các ứng dụng
+                          điện
+                          tử (eCommerce, eLearning, eGoverment,…)</li>
+                        <li>Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.</li>
+                      </ul>
+                      Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái
+                      độ
+                      cần thiết để làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về phần mềm sau này.
+                      </p>
+                    </div>
+                    <div id="summaryEN">
+                      <div style="width: 100%;">&nbsp;
+                        <hr>
+                      </div>
+                      <div> <label><strong>Mô tả tóm tắt học phần (tiếng
+                            Anh)</strong>
+                          (*)</label>
+                      </div>
+                      <p><strong>Objectives:</strong>
+                        The course provides students with the necessary knowledge to build and develop online
+                        applications and services on the web environment. After completing this couse, students are
+                        able
+                        to:
+                      <ul>
+                        <li>Use a programming language such as JSP, PHP to develop web applications for different
+                          areas
+                          such as content management system (CMS), portal, or online applications (eCommerce,
+                          eLearning,
+                          eGoverment, ...)</li>
+                        <li>Understand the popular web technologies, platforms, frameworks.</li>
+                      </ul>
+                      In addition, the course also provides students with skills of teamwork and presentation, and
+                      attitudes needed to work and apply the techniques in software projects and companies in the
+                      future.</p>
+                    </div>
+
+                    <div id="contentVN">
+                      <div style="width: 100%;">&nbsp;
+                        <hr>
+                      </div>
+                      <div> <label><strong>Nội dung tóm tắt của học phần (tiếng
+                            Việt)</strong>
+                          (*)</label> </div>
+                      <div>
+                        <p>Internet, web, kiến trúc ứng dụng web,&nbsp; HTML, CSS, Javascript, PHP, JSP, Ajax,
+                          DOM, XML,
+                          SOA, An toàn bảo mật web, v.v.</p>
+                      </div>
+                    </div>
+                    <div id="contentEN">
+                      <div style="width: 100%;">&nbsp;
+                        <hr>
+                      </div>
+                      <div> <label><strong>Nội dung tóm tắt của học phần (tiếng
+                            Anh)</strong>
+                          (*)</label> </div>
+                      <div>
+                        <p>Internet, web, architecture of web
+                          application,&nbsp; HTML, CSS, Javascript, PHP, JSP, Ajax, DOM, XML, SOA,&nbsp;website
+                          security</a>,
+                          etc.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="reference">
+                    <div style="width: 100%;">&nbsp;
+                      <hr>
+                    </div>
+                    <div> <label><strong>Sách tham khảo</strong></label> </div>
+                    <div style="display: flex; justify-content: space-between;">
+                      <div style="flex: 2; margin-right: 30px;">
+                        <p>Sách Web Technologies: HTML, Javascript, PHP, Java, Jsp, XML and Ajax, Black Book</p>
+                      </div>
+                      <a href="https://www.amazon.com/Web-Technologies-HTML-Javascript-Black/dp/8177229974"
+                        target="_blank" style="flex: 1;margin-top: 20px;">
+                        <div class="FRB" style="width: 100%;">
+                          <img class="DRB" src="https://m.media-amazon.com/images/I/71t58FV+qFL._SY466_.jpg"
+                            style="width: 100%;">
+                          <div class="ERB" style="width: 100%;color: blue" title="">Web Technologies: HTML,
+                            Javascript, PHP, Java, Jsp, XML and Ajax, Black Book</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Section 3: Các công nghệ web -->
+    <div id="web-tech" class="w3-container w3-padding-64 hidden">
+      <div class="container">
+        <div class="header">Các công nghệ web</div>
+        <p>Dưới đây là các công nghệ phổ biến được sử dụng trong xây dựng ứng dụng Web:</p>
+        <div id="frontend">
+          <h3>1. Frontend (Giao diện người dùng)</h3>
+          <ul>
+            <li><strong>HTML, CSS, JavaScript</strong>: Các công nghệ cơ bản để xây dựng cấu trúc và giao diện người
+              dùng.
+            </li>
+            <li><strong>ReactJS</strong>: Thư viện JavaScript để xây dựng giao diện người dùng động.</li>
+            <li><strong>Angular</strong>: Framework JavaScript mạnh mẽ cho các ứng dụng Web quy mô lớn.</li>
+            <li><strong>Vue.js</strong>: Framework linh hoạt giúp phát triển giao diện người dùng hiệu quả.</li>
+            <li><strong>CSS Preprocessors (SASS, LESS)</strong>: Giúp cải thiện mã CSS với các tính năng như biến và
+              hàm.
+            </li>
+            <li><strong>Responsive Design</strong>: Thiết kế giao diện phù hợp với mọi kích thước màn hình (sử dụng
+              Bootstrap, Tailwind CSS).</li>
+          </ul>
+        </div>
+
+        <div id="backend">
+          <h3>2. Backend (Máy chủ và xử lý dữ liệu)</h3>
+          <ul>
+            <li><strong>Node.js</strong>: Môi trường runtime JavaScript hiệu quả cho ứng dụng Web.</li>
+            <li><strong>Express.js</strong>: Framework giúp xây dựng API và xử lý các yêu cầu HTTP nhanh chóng.</li>
+            <li><strong>Django (Python)</strong>: Framework Python phù hợp cho các ứng dụng Web cần bảo mật cao.</li>
+            <li><strong>Ruby on Rails</strong>: Framework giúp phát triển ứng dụng Web nhanh chóng và dễ dàng bảo trì.
+            </li>
+            <li><strong>Java Spring Boot</strong>: Framework mạnh mẽ cho ứng dụng Web Java với khả năng mở rộng cao.
+            </li>
+          </ul>
+        </div>
+
+        <div id="database">
+          <h3>3. Cơ sở dữ liệu</h3>
+          <ul>
+            <li><strong>MySQL</strong>: Cơ sở dữ liệu quan hệ phổ biến.</li>
+            <li><strong>PostgreSQL</strong>: Cơ sở dữ liệu mạnh mẽ hỗ trợ truy vấn phức tạp.</li>
+            <li><strong>MongoDB</strong>: Cơ sở dữ liệu NoSQL linh hoạt cho dữ liệu phi cấu trúc.</li>
+            <li><strong>Cassandra</strong>: Cơ sở dữ liệu NoSQL phân tán phù hợp cho dữ liệu lớn.</li>
+          </ul>
+        </div>
+
+        <div id="api">
+          <h3>4. API và Tích hợp dịch vụ</h3>
+          <ul>
+            <li><strong>RESTful APIs</strong>: Phương thức phổ biến để giao tiếp giữa các hệ thống qua HTTP.</li>
+            <li><strong>GraphQL</strong>: Công nghệ API mạnh mẽ giúp lấy dữ liệu theo yêu cầu.</li>
+            <li><strong>WebSockets</strong>: Giải pháp cho các ứng dụng thời gian thực.</li>
+          </ul>
+        </div>
+
+        <div id="devops">
+          <h3>5. DevOps và Triển khai</h3>
+          <ul>
+            <li><strong>Docker</strong>: Giải pháp đóng gói ứng dụng và môi trường vào container.</li>
+            <li><strong>CI/CD</strong>: Tự động hóa quy trình kiểm thử và triển khai (Jenkins, GitLab CI, GitHub
+              Actions).
+            </li>
+            <li><strong>AWS, Azure, Google Cloud</strong>: Các dịch vụ đám mây linh hoạt cho phát triển và triển khai
+              ứng
+              dụng Web.</li>
+          </ul>
+        </div>
+
+        <div id="security"></div>
+        <h3>6. Bảo mật</h3>
+        <ul>
+          <li><strong>OAuth2 & JWT</strong>: Cơ chế xác thực và phân quyền người dùng an toàn.</li>
+          <li><strong>HTTPS</strong>: Đảm bảo giao tiếp an toàn qua mã hóa SSL/TLS.</li>
+          <li><strong>Helmet.js</strong>: Thư viện Node.js tăng cường bảo mật HTTP header.</li>
+        </ul>
+
+        <div id="testing">
+          <h3>7. Testing và Debugging</h3>
+          <ul>
+            <li><strong>Jest</strong>: Công cụ kiểm thử JavaScript, thường dùng với React và Node.js.</li>
+            <li><strong>Mocha & Chai</strong>: Framework kiểm thử cho Node.js.</li>
+            <li><strong>Cypress</strong>: Công cụ kiểm thử tích hợp mạnh mẽ cho các ứng dụng Web.</li>
+            <li><strong>Postman</strong>: Công cụ kiểm thử API và làm việc với RESTful API.</li>
+          </ul>
+        </div>
+
+        <div id="optimization">
+          <h3>8. Performance Optimization</h3>
+          <ul>
+            <li><strong>Lazy Loading</strong>: Tải tài nguyên theo yêu cầu để cải thiện tốc độ tải trang.</li>
+            <li><strong>CDN (Content Delivery Network)</strong>: Mạng phân phối nội dung giúp giảm độ trễ và cải thiện
+              tốc
+              độ.</li>
+            <li><strong>Caching</strong>: Sử dụng Redis hoặc Memcached để lưu trữ dữ liệu tạm thời và giảm tải cho
+              server.
+            </li>
+          </ul>
+        </div>
+
+        <div id="authentication">
+          <h3>9. User Authentication & Authorization</h3>
+          <ul>
+            <li><strong>Firebase Authentication</strong>: Dịch vụ đăng nhập thông qua Google, Facebook, email/password.
+            </li>
+            <li><strong>Auth0</strong>: Dịch vụ bảo mật giúp quản lý xác thực và phân quyền người dùng dễ dàng.</li>
+          </ul>
+        </div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">
+          <img width="100%"
+            src="https://www.shutterstock.com/shutterstock/photos/1854050815/display_1500/stock-vector-abstract-technology-horizontal-motion-style-concept-particle-connection-background-design-with-red-1854050815.jpg"
+            alt="">
+          <p style="color: blue;">
+            Các công nghệ web</p>
+        </a>
+
+      </div>
+    </div>
+    <!-- Section 4: Thông tin sinh viên -->
+    <div id="student-info" class="w3-container w3-padding-64 hidden">
+      <div class="container">
+        <div class="header">Thông tin cá nhân</div>
+
+        <div class="student-info" style="height: 50%" >
+          <div class="left">
+            <img src="./assets/ava.jpg" alt="Student Photo" class="profile-photo" style="height: 500px;width:300px ;">
+          </div>
+          <div class="right">
+            <div class="details"><span>Họ và tên:</span> Phạm Tùng Dương</div>
+            <div class="details"><span>Năm vào trường:</span> 2022</div>
+            <div class="details"><span>Bậc đào tạo:</span> KSCLC-TN-TT-VNVP-ICT</div>
+            <div class="details"><span>Chương trình:</span> Công nghệ thông tin Việt-Nhật 2022</div>
+            <div class="details"><span>MSSV:</span> 20225825</div>
+            <div class="details"><span>Giới tính:</span> Nam</div>
+            <div class="details"><span>Lớp:</span> Việt-Pháp 03-K67</div>
+            <div class="details"><span>Khóa học:</span> 67</div>
+            <div class="details"><span>Email:</span> Duong.PT225825@sis.hust.edu.vn</div>
+          </div>
+        </div>
+
+        <div class="academic-info" id="academic-info">
+          <div class="section-header">Thông tin học tập</div>
+          <table class="table-info">
+            <tr>
+              <th>Tổng kết học kỳ</th>
+              <td>20232</td>
+              <th>Số TC tích lũy</th>
+              <td>103</td>
+            </tr>
+            <tr>
+              <th>Trung bình tích lũy</th>
+              <td>3.05</td>
+              <th>Trình độ sinh viên</th>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>Số TC nợ đăng ký</th>
+              <td>0</td>
+              <th>Mức cảnh báo</th>
+              <td>M0</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="skills-info" id="skills-info">
+          <div class="section-header">Kĩ năng</div>
+          <div class="skills">
+            <table class="table-info">
+              <tr>
+                <th>Ngôn ngữ</th>
+                <td>HTML, CSS, JavaScript, PHP, Java</td>
+              </tr>
+              <tr>
+                <th>Frameworks</th>
+                <td>ReactJS, NodeJS, Express</td>
+              </tr>
+              <tr>
+                <th>Công cụ</th>
+                <td>Git, Visual Studio Code, Postman</td>
+              </tr>
+              <tr>
+                <th>Cơ sở dữ liệu</th>
+                <td>MySQL, SQL Server, MongoDB</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="projects-info" id="projects-info">
+          <div class="section-header">Dự án</div>
+          <div class="project">
+            <table class="table-info">
+              <tr>
+                <th>Ứng dụng Quản lý Dân số</th>
+                <td>Nhóm 4 người <br>
+                  Nhiệm vụ: Thiết kế giao diện người dùng, phát triển các tính năng front-end <br>
+                  Công nghệ sử dụng: Java, MySQL <br>
+                  Mục tiêu: Tạo giao diện người dùng cho hệ thống</td>
+              </tr>
+              <tr>
+                <th>Hệ thống quản lý tuyển sinh</th>
+                <td>Nhóm 4 người <br>
+                  Nhiệm vụ: Phát triển front-end <br>
+                  Công nghệ sử dụng: HTML, CSS, JavaScript, MySQL, PHP <br>
+                  Mục tiêu: Tạo giao diện người dùng cho hệ thống</td>
+              </tr>
+              <tr>
+                <th>Hệ thống đánh giá dịch vụ sản phẩm</th>
+                <td>Cá nhân <br>
+                  Công nghệ sử dụng: HTML, CSS, JavaScript, MySQL, NodeJS, React
+                </td>
+              </tr>
+            </table>
+
+
+          </div>
+        </div>
+        <div class="hobbies-info" id="hobbies-info">
+          <div class="section-header">Sở thích</div>
+          <ul>
+            <li>Đọc sách</li>
+            <li>Nghe nhạc</li>
+            <li>Xem phim</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5: Admin Page -->
+    <div id="admin-page" class="w3-container w3-padding-64 hidden">
+
+      <div id="menu-items">
+        <h2>Admin menu top: Chỉnh sửa menu top</h2>
+          <div class="menu-item">
+              <span>Trang chủ</span>
+              <button class="view" onclick="navigateToMenuLeft('home')">👁️</button>
+              <button class="invisiblie"></button>
+              <button class="invisiblie"></button>
+              <button class="add" onclick="showAddInputField('home')" >+</button> 
+          </div>
+          <div class="menu-item">
+              <span>Thông tin môn học</span>
+              <button class="view" onclick="navigateToMenuLeft('topinfo')">👁️</button>
+              <button class="edit" onclick="showInputField('topinfo')">✏️</button>
+              <button class="delete" onclick="removeMenuItemById('topinfo')">X</button>
+              <button class="add" onclick="showAddInputField('topinfo')" >+</button> 
+          </div>
+          <div class="menu-item">
+              <span>Các công nghệ web</span>
+              <button class="view" onclick="navigateToMenuLeft('topwebtech')">👁️</button>
+              <button class="edit" onclick="showInputField('topwebtech')">✏️</button>
+              <button class="delete" onclick="removeMenuItemById('topwebtech')">X</button>
+              <button class="add" onclick="showAddInputField('topwebtech')" >+</button> 
+          </div>
+          <div class="menu-item">
+              <span>Thông tin sinh viên</span>
+              <button class="view" onclick="navigateToMenuLeft('topstudent') ">👁️</button>
+              <button class="edit" onclick="showInputField('topstudent')">✏️</button>
+              <button class="delete" onclick="removeMenuItemById('topstudent')">X</button>
+              <button class="add" onclick="showAddInputField('topstudent')" >+</button> 
+          </div>
+      </div>
+      <!--Edit Menu-->
+      <div id="inputContainer" style="display:none;">
+        <input type="text" id="newMenuName" placeholder="Nhập tên mới cho menu" />
+        <button onclick="updateMenuFromInput()">Edit</button>
+      </div>
+      <!--Add menu-->
+      <div id="addInputContainer" style="display:none;">
+        <input type="text" id="newMenuTitle" placeholder="Nhập tên menu mới" />
+        <button onclick="addNewMenu()">Thêm menu</button>
+      </div>
+<!-- Admin Menu Left for Trang chủ -->
+<div id="admin-menu-left-home" style="display:none;">
+  <h2>Admin Menu Left: Trang chủ</h2>
+  
+  <div id="leftMenuContent-home">
+    <div class="menu-item">
+      <span>Menu</span>
+      <button class="add" onclick="addContent('classInfo')">+</button>
+  </div>
+      <div class="menu-item">
+          <span>Thông tin khai giảng</span>
+          <button class="view" onclick="viewContent('classInfo')">👁️</button>
+          <button class="edit" onclick="editContent('classInfo')">✏️</button>
+          <button class="delete" onclick="deleteContent('classInfo')">X</button>
+          <button class="add" onclick="addContent('classInfo')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Thông tin seminar</span>
+          <button class="view" onclick="viewContent('seminar')">👁️</button>
+          <button class="edit" onclick="editContent('seminar')">✏️</button>
+          <button class="delete" onclick="deleteContent('seminar')">X</button>
+          <button class="add" onclick="addContent('seminar')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Thông tin công ty quan tâm</span>
+          <button class="view" onclick="viewContent('company')">👁️</button>
+          <button class="edit" onclick="editContent('company')">✏️</button>
+          <button class="delete" onclick="deleteContent('company')">X</button>
+          <button class="add" onclick="addContent('company')">+</button>
+      </div>
+  </div>
+
+  <button onclick="goBackToMenuTop()">Quay lại Menu Top</button>
+</div>
+
+
+
+<!-- Admin Menu Left cho "Thông tin môn học" -->
+<div id="admin-menu-left-topinfo" style="display:none;">
+  <h2>Admin Menu Left: Thông tin môn học</h2>
+  
+  <div id="leftMenuContent-topinfo">
+    <div class="menu-item">
+      <span>Thông tin môn học</span>
+      <button class="add" onclick="addContent('classInfo')">+</button>
+  </div>
+      <div class="menu-item">
+          <span>Mô tả tóm tắt học phần (tiếng Việt)</span>
+          <button class="view" onclick="viewContent('summaryVN')">👁️</button>
+          <button class="edit" onclick="editContent('summaryVN')">✏️</button>
+          <button class="delete" onclick="deleteContent('summaryVN')">X</button>
+          <button class="add" onclick="addContent('summaryVN')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Mô tả tóm tắt học phần (tiếng Anh)</span>
+          <button class="view" onclick="viewContent('summaryEN')">👁️</button>
+          <button class="edit" onclick="editContent('summaryEN')">✏️</button>
+          <button class="delete" onclick="deleteContent('summaryEN')">X</button>
+          <button class="add" onclick="addContent('summaryEN')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Nội dung tóm tắt học phần (tiếng Việt)</span>
+          <button class="view" onclick="viewContent('contentVN')">👁️</button>
+          <button class="edit" onclick="editContent('contentVN')">✏️</button>
+          <button class="delete" onclick="deleteContent('contentVN')">X</button>
+          <button class="add" onclick="addContent('contentVN')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Nội dung tóm tắt học phần (tiếng Anh)</span>
+          <button class="view" onclick="viewContent('contentEN')">👁️</button>
+          <button class="edit" onclick="editContent('contentEN')">✏️</button>
+          <button class="delete" onclick="deleteContent('contentEN')">X</button>
+          <button class="add" onclick="addContent('contentEN')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Sách tham khảo</span>
+          <button class="view" onclick="viewContent('reference')">👁️</button>
+          <button class="edit" onclick="editContent('reference')">✏️</button>
+          <button class="delete" onclick="deleteContent('reference')">X</button>
+          <button class="add" onclick="addContent('reference')">+</button>
+      </div>
+  </div>
+  <button onclick="goBackToMenuTop()">Quay lại Menu Top</button>
+</div>
+
+
+<!-- Admin Menu Left cho "Các công nghệ web" -->
+<div id="admin-menu-left-topwebtech" style="display:none;">
+  <h2>Admin Menu Left: Các công nghệ web</h2>
+  
+  <div id="leftMenuContent-topwebtech">
+    <div class="menu-item">
+      <span>Công nghệ web</span>
+      <button class="add" onclick="addContent('classInfo')">+</button>
+  </div>
+      <div class="menu-item">
+          <span>Front-end</span>
+          <button class="view" onclick="viewContent('frontend')">👁️</button>
+          <button class="edit" onclick="editContent('frontend')">✏️</button>
+          <button class="delete" onclick="deleteContent('frontend')">X</button>
+          <button class="add" onclick="addContent('frontend')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Back-end</span>
+          <button class="view" onclick="viewContent('backend')">👁️</button>
+          <button class="edit" onclick="editContent('backend')">✏️</button>
+          <button class="delete" onclick="deleteContent('backend')">X</button>
+          <button class="add" onclick="addContent('backend')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Cơ sở dữ liệu</span>
+          <button class="view" onclick="viewContent('database')">👁️</button>
+          <button class="edit" onclick="editContent('database')">✏️</button>
+          <button class="delete" onclick="deleteContent('database')">X</button>
+          <button class="add" onclick="addContent('database')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>API và tích hợp dịch vụ</span>
+          <button class="view" onclick="viewContent('api')">👁️</button>
+          <button class="edit" onclick="editContent('api')">✏️</button>
+          <button class="delete" onclick="deleteContent('api')">X</button>
+          <button class="add" onclick="addContent('api')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>DevOps và triển khai</span>
+          <button class="view" onclick="viewContent('devops')">👁️</button>
+          <button class="edit" onclick="editContent('devops')">✏️</button>
+          <button class="delete" onclick="deleteContent('devops')">X</button>
+          <button class="add" onclick="addContent('devops')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Bảo mật</span>
+          <button class="view" onclick="viewContent('security')">👁️</button>
+          <button class="edit" onclick="editContent('security')">✏️</button>
+          <button class="delete" onclick="deleteContent('security')">X</button>
+          <button class="add" onclick="addContent('security')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Testing và Debugging</span>
+          <button class="view" onclick="viewContent('testing')">👁️</button>
+          <button class="edit" onclick="editContent('testing')">✏️</button>
+          <button class="delete" onclick="deleteContent('testing')">X</button>
+          <button class="add" onclick="addContent('testing')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>Performance Optimization</span>
+          <button class="view" onclick="viewContent('optimization')">👁️</button>
+          <button class="edit" onclick="editContent('optimization')">✏️</button>
+          <button class="delete" onclick="deleteContent('optimization')">X</button>
+          <button class="add" onclick="addContent('optimization')">+</button>
+      </div>
+      <div class="menu-item">
+          <span>User Authentication & Authorization</span>
+          <button class="view" onclick="viewContent('authentication')">👁️</button>
+          <button class="edit" onclick="editContent('authentication')">✏️</button>
+          <button class="delete" onclick="deleteContent('authentication')">X</button>
+          <button class="add" onclick="addContent('authentication')">+</button>
+      </div>
+  </div>
+
+  <button onclick="goBackToMenuTop()">Quay lại Menu Top</button>
+</div>
+
+
+
+<!-- Admin Menu Left cho "Thông tin sinh viên" -->
+<div id="admin-menu-left-topstudent" style="display:none;">
+    <h2>Admin Menu Left: Thông tin sinh viên</h2>
+    
+    <div id="leftMenuContent-topstudent">
+      <div class="menu-item">
+        <span>Thông tin sinh viên</span>
+        <button class="add" onclick="addContent('classInfo')">+</button>
+    </div>
+        <div class="menu-item">
+            <span>Thông tin học tập</span>
+            <button class="view" onclick="viewContent('academic-info')">👁️</button>
+            <button class="edit" onclick="editContent('academic-info')">✏️</button>
+            <button class="delete" onclick="deleteContent('academic-info')">X</button>
+            <button class="add" onclick="addContent('academic-info')">+</button>
+        </div>
+        <div class="menu-item">
+            <span>Kĩ năng</span>
+            <button class="view" onclick="viewContent('skills-info')">👁️</button>
+            <button class="edit" onclick="editContent('skills-info')">✏️</button>
+            <button class="delete" onclick="deleteContent('skills-info')">X</button>
+            <button class="add" onclick="addContent('skills-info')">+</button>
+        </div>
+        <div class="menu-item">
+            <span>Dự án</span>
+            <button class="view" onclick="viewContent('projects-info')">👁️</button>
+            <button class="edit" onclick="editContent('projects-info')">✏️</button>
+            <button class="delete" onclick="deleteContent('projects-info')">X</button>
+            <button class="add" onclick="addContent('projects-info')">+</button>
+        </div>
+        <div class="menu-item">
+            <span>Sở thích</span>
+            <button class="view" onclick="viewContent('hobbies-info')">👁️</button>
+            <button class="edit" onclick="editContent('hobbies-info')">✏️</button>
+            <button class="delete" onclick="deleteContent('hobbies-info')">X</button>
+            <button class="add" onclick="addContent('hobbies-info')">+</button>
+        </div>
+    </div>
+    <button onclick="goBackToMenuTop()">Quay lại Menu Top</button>
+</div>
+
+
+
+
+  </div>
+  
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-theme-l1 w3-padding-32">
+      <p>&copy; 2024 Khanh's Website. All rights reserved.</p>
+      <p>Liên hệ: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+      <p><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> | <a
+          href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </p>
+
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+  <!-- END MAIN -->
+  <script src="./js/scripts.js"></script>
+
+  <div id="highlighter--hover-tools" style="display: none;">
+    <div id="highlighter--hover-tools--container">
+      <div class="highlighter--icon highlighter--icon-copy" title="Copy"></div>
+      <div class="highlighter--icon highlighter--icon-change-color" title="Change Color"></div>
+      <div class="highlighter--icon highlighter--icon-delete" title="Delete"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

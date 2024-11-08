@@ -1,0 +1,199 @@
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0px auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #e17c00;
+}
+
+.student-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.student-info .left {
+  width: 48%;
+}
+
+.student-info .right {
+  width: 80%;
+}
+
+.student-info img {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.details {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.details span {
+  font-weight: bold;
+}
+
+.academic-info,
+.skills-info,
+.hobbies-info,
+.projects-info {
+  margin-top: 20px;
+}
+
+.section-header {
+  background-color: #ffcc33;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.table-info {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table-info th,
+.table-info td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-info th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+
+#myFooter {
+  position: relative;
+  /* Can also try fixed if you want the footer to stay visible */
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+
+.w3-main {
+  min-height: calc(100vh - 200px);
+  /* Adjust depending on the size of your footer */
+  /* padding-bottom: 100px; */
+  /* Space for the footer */
+}
+
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  color: #fff !important;
+  background-color: #FFB300 !important;
+}
+
+/*Edit button */
+#menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Khoảng cách giữa các dòng */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center; /* Canh giữa theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các phần tử trong dòng */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item span {
+  flex: 1; /* Chiếm đầy khoảng trống bên trái để các nút nằm bên phải */
+  font-weight: bold;
+}
+
+/* Đặt chiều rộng cố định cho các nút */
+.menu-item button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 50px; /* Đảm bảo nút có kích thước đều nhau */
+  text-align: center;
+}
+
+/* Định kiểu riêng cho từng loại nút */
+.menu-item button.view {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.menu-item button.edit {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.menu-item button.delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.menu-item button.add {
+  background-color: #FF9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
